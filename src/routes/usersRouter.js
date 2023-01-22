@@ -1,10 +1,10 @@
 const express = require("express");
 const router = express.Router();
-const viewersControllers = require("../controllers/viewersController");
+const usersControllers = require("../controllers/usersController");
 const path = require("path");
 
 
-router.get("/", viewersControllers.viewers);
+router.get("/", usersControllers.users);
 
 
 module.exports = router;
